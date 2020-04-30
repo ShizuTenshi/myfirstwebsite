@@ -1,0 +1,119 @@
+*,html,body{
+    margin:O;
+    padding:0;
+    font-family: 'Lobster', cursive;
+}
+
+
+header{
+    background-color:black; /* crée une couleur d'arrière-plan pour l'en-tête*/
+    height: 80px;
+    line-height: 80px; /* Je voulais que mon texte de navigation soit un peu plus bas*/ 
+}
+
+/* supprime les balles de la liste type ul*/
+ul{
+    list-style: none; 
+}
+
+/* mets le li dans la meme ligne*/
+ul li{
+    display:inline-block;
+}
+
+/* déplace la navigation vers le côté droit*/
+header nav{
+    float:right;
+}
+
+
+header nav ul li a{
+    padding-right: 20px; /* Je voulais plus d'espace entre les elements de navigation*/ 
+    color:white;
+    transition: all 0.5s; /* faire une sorte d'animation de changemennt de couleur lorsque on place le curseur dessus */
+}
+header nav ul li a:hover{
+    color:pink; /* change la couleur lorsque vous placez votre curseur dessus*/
+
+}
+
+.cats { /* ca mets mes photos de chats dans la meme ligne */
+padding: 20px;
+display:flex;
+flex-direction: row;
+}
+
+.cats figure {
+width:300px;
+margin:auto;
+}
+
+.cats figure img{
+width:300px;
+border-radius: 20px; /* I think pictures look better with round borders */
+
+}
+
+
+main{
+    text-align: center;
+    min-height: calc(100vh - 100px - 40px);  /* pour que le footer reste en bas de la page*/
+ /*   background-image: url(../Images/background.png);
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+
+main div{
+    text-align: center;
+    font-size: large;
+}
+
+/* j'ai obtenu l'animation du bouton d'un tutoriel youtube 
+ https://www.youtube.com/watch?v=MLfAW55_4cY */
+
+.btn{
+    border: 1px solid #3498db;
+    background: transparent!important;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #3498db;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db!important;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%
+}
+
+.btn:hover::before{
+    height:180%;
+}
+
+footer{
+    background-color:black; 
+    padding:20px;
+}
+
+.mainfooter{
+    color: white;
+    text-align: center;
+}
+
+

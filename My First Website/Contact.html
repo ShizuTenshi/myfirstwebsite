@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Robo Familiar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="CSS/Style.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/StyleForm.css" type="text/css"> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+  
+  </head>
+
+<body>
+  <header> 
+
+    <div class="container">
+      <div class="row"> 
+        <a href="Index.html" class="logo"><img src="Images/Logo.png" width=60px></img></a>
+        <nav>
+          <ul>
+            <li><a href=Index.html>Home</a></li>
+            <li><a href=About.html>About</a></li>
+            <li><a href=Contact.html>Contact</a></li>
+            <li><a href=ImaginaryService.html>Service</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  
+  </header>
+
+
+<!-- J'ai suivi le formulaire de contact de ce tutoriel youtube  
+   https://www.youtube.com/watch?v=WY4rvU4ImgE -->
+
+<main>
+  <div class="wrapper">
+    <h2>Contact us</h2>
+    <div id="error_message"></div>
+    <form id="myform" onsubmit="return validate();">
+      <div class="input_field">
+          <input type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Subject" id="subject">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Phone" id="phone">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Email" id="email">
+      </div>
+      <div class="input_field">
+          <textarea placeholder="Message" id="message"></textarea>
+      </div>
+      <div class="btn">
+          <input type="submit">
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<footer class="mainfooter"> 
+  Wiem Saidani - Aix-Marseille University - 2019-2020
+</footer>
+
+
+</body>
+</html>

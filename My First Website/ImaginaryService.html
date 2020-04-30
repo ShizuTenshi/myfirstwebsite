@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Robo Familiar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="CSS/Style.css" type="text/css"> 
+    <link rel="stylesheet" href="CSS/button.css" type="text/css">  
+    <link rel="stylesheet" href="CSS/StyleForm.css" type="text/css">   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/uploadscript.js"></script>
+  
+  </head>
+
+<body>
+  <header> 
+
+    <div class="container">
+      <div class="row"> 
+        <a href="Index.html" class="logo"><img src="Images/Logo.png" width=60px></img></a>
+        <nav>
+          <ul>
+            <li><a href=Index.html>Home</a></li>
+            <li><a href=About.html>About</a></li>
+            <li><a href=Contact.html>Contact</a></li>
+            <li><a href=ImaginaryService.html>Service</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  
+  </header>
+
+  <!-- j'ai utilisé le même formulaire de contact et modifié un peu pour 
+  ajouter Location et un bouton pour le téléchargement de fichiers -->
+
+  <main>
+    <div class="wrapper">
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return validate();">
+        <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <div>
+          <label for="location">location</label>
+          <select id="location" name="location">
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica: only for penguins</option>
+            <option value="Europe">Europe</option>
+          </select>
+        </div>
+        <div>
+          <input type="file" id="real-file" hidden="hidden" />
+          <button type="button" id="custom-button">CHOOSE A FILE</button>
+          <span id="custom-text">No file chosen, yet.</span>
+        </div>
+        <div class="btn">
+            <input type="submit">
+        </div>
+        
+      </form>
+    </div>
+  </main>
+  
+  <footer class="mainfooter"> 
+    Wiem Saidani - Aix-Marseille University - 2019-2020
+  </footer>
+
+
+</body>
+</html>
